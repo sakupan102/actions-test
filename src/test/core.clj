@@ -9,4 +9,7 @@
   [x]
   (+ 5 x))
 
+(println (add-five 3))
+(foo "tanaka")
+
 
