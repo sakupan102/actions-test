@@ -60,4 +60,4 @@ jobs:
         run: cljstyle version
       - run: bb --classpath actions-tes src/test/core.clj
 
-      - run: echo "${{ github.event }}"
+      - run: echo "${{ github.event.actor.login }}"
