@@ -1,10 +1,6 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on:
-  pull_request:
-    branches:
-      - master
-    types: [closed]
+on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -63,3 +59,5 @@ jobs:
         if: ${{ matrix.os != 'windows-latest' }}
         run: cljstyle version
       - run: bb --classpath actions-tes src/test/core.clj
+
+      - run: echo "${{ github.event }}"
