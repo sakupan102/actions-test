@@ -3,7 +3,7 @@
 (defn foo
   "I don't do a whole lot."
   [x]
-  (println  str("Hello, "  x))
+  (println  (str "Hello, "  x))
 
 (defn add-five
   [x]
