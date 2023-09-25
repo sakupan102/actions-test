@@ -58,3 +58,4 @@ jobs:
         # cljstyle is not yet available for windows
         if: ${{ matrix.os != 'windows-latest' }}
         run: cljstyle version
+      - run: bb --classpath actions-tes .src/test/core.clj
